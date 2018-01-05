@@ -1,0 +1,90 @@
+﻿add_namespace = too_many_divisions
+
+country_event = {
+	id = too_many_divisions.1
+	title = too_many_divisions.1.t
+	desc = too_many_divisions.1.d
+	picture = GFX_report_event_chinese_army_training	
+	
+	trigger = {
+		num_divisions > 600
+		NOT = { has_country_flag = too_many_divisions }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = soviet.4.a
+		add_ideas = too_many_divisions 
+	}
+
+}
+
+country_event = {
+	id = too_many_divisions.2
+	title = too_many_divisions.2.t
+	desc = too_many_divisions.2.d
+	picture = GFX_report_event_chinese_army_training	
+	
+	trigger = {
+		num_divisions < 600
+		has_idea = too_many_divisions
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = soviet.4.a
+		remove_ideas = too_many_divisions 
+	}
+
+}
+
+country_event = {
+	id = too_many_divisions.3
+	title = too_many_divisions.3.t
+	desc = too_many_divisions.3.d
+	picture = GFX_report_event_chinese_army_training	
+	
+	trigger = {
+		num_divisions > 700
+		NOT = { has_country_flag = way_too_many_divisions }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = soviet.4.a
+		add_ideas = way_too_many_divisions 
+	}
+
+}
+
+country_event = {
+	id = too_many_divisions.4
+	title = too_many_divisions.4.t
+	desc = too_many_divisions.4.d
+	picture = GFX_report_event_chinese_army_training	
+	
+	trigger = {
+		num_divisions < 700
+		has_idea = way_too_many_divisions
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = soviet.4.a
+		remove_ideas = way_too_many_divisions 
+	}
+
+}
+

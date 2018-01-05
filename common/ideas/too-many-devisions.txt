@@ -1,0 +1,39 @@
+ideas = {
+
+	country = {
+		too_many_divisions = {
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				army_org_factor = -0.6
+				training_time_factor = 1
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		way_too_many_divisions = {
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				army_org_factor = -0.3
+				training_time_factor = 1
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
+
